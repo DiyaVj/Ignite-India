@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar*/
+.navbar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #000027;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 18px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1rem;
+    font-weight: medium;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(232, 232, 232);
+    padding: 1px 25px;
+    transition: all .3s ease;
+}
+.navbar ul li a:hover{
+    background-color: transparent;
+    color: #a70c92;
+    font-weight: bold;
+}
+
+@media (max-width: 767px){
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(-45deg,#000027,#2E5A88,#000080,#301934);
+    background-size: 1000% 1000%;
+    animation: change 10s ease-in-out infinite;
+}
+
+.image{
+    margin-left: 50px;
+    width: 90%;
+}
+
+.title{
+    font-size: 60px;
+    font-family:  'Segoe UI', system-ui,  'Segoe UI', Roboto,Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 75px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    top: 60%;
+    margin-left: 75px;
+    font-family: century;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.btn1{
+    font-size: 15px;
+    font-weight: 440;
+    padding: 10px 1px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 10px;
+    margin: 90px;
+}
+
+.btn1:hover{
+    cursor: pointer;
+    background-color: white;
+    font-weight: medium;
+    font-size: 15px;
+    font-weight: 440;
+    box-shadow: 0 0 10px rgb(169, 205, 235);
+    color: #a70c92;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* about Section*/
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background: white;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* benefits Section*/
+#benefits{
+}
+
+
+/* contact Section*/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.container3{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://user-images.githubusercontent.com/87236107/193678143-15009449-95d0-42d4-b8fc-8d23188605fa.png");
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.contact-box{
+    width: 100%;
+    max-width: 440px;
+    color: #fff;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(27, 27, 27, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+}
+
+.text-center{
+    text-align: center;
+    padding: 20px;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+.form{
+    max-width: 400px;
+    margin: 20px;
+}
+
+.form input{
+    margin: 12px 0px;
+    padding: 5px 8px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(1px);
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn{
+    font-size: 15px;
+    font-weight: 440;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: 2px 0 1px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    font-weight: medium;
+    box-shadow: 0 0 10px rgb(169, 205, 235);
+    color: #a70c92;
+}
+
+.form-input{
+    margin: 12px 0px;
+    padding: 5px 8px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(1px);
+    background-color: transparent;
+    color: #fff;
+}
