@@ -11,7 +11,7 @@ html{
 /* Navbar*/
 .navbar{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     background-color: #000027;
     position: sticky;
@@ -77,24 +77,32 @@ html{
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    /* border: 1px solid white; */
+    align-items: center;
     position: absolute;
-    top: 60%;
-    margin-left: 75px;
+    top: 55%;
+    right:40%;
+    margin: 0px 79px;
     font-family: century;
-    font-size: 1rem;
-    text-align: left;
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
 .btn1{
-    font-size: 15px;
-    font-weight: 440;
-    padding: 10px 1px;
+    padding: 10px 20px;
     background-color: transparent;
     border: 1px solid white;
-    color: #fff;
-    border-radius: 10px;
-    margin: 90px;
+    outline: none;
+    transition: .3s ease;
+    border-radius: 8px ;
+    color: white;
+    font-weight: medium;
+    font-size: 15px;
+    font-weight: 440;
+    align-items: left;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 420px;
 }
 
 .btn1:hover{
@@ -123,27 +131,61 @@ html{
 #about{
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 50px;
 }
 
 .container1{
     width: 100%;
     height: 100vh;
     background-position: center;
-    background: white;
+    background: linear-gradient(180deg, #010010 19.58%, #040067 180.32%);
     background-size: cover;
     padding: 30px;
     display: flex;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
 }
 
+.headings{
+    margin-bottom: 430px;
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+}
+
+.main2{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    margin: 0px 80px;
+    font-family: century;
+    font-size: 1.3rem;
+    text-align: justify;   
+    margin-bottom: 150PX;
+}
 
 /* benefits Section*/
 #benefits{
+    display: flex;
+    flex-direction: column;
+}
+
+.container2{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background: linear-gradient(178.66deg, #02003A 1.03%, #010011 98.78%);
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -214,7 +256,7 @@ html{
     border: 1px solid white;
     color: #fff;
     padding: 10px 25px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 2px 0 1px;
 }
 
@@ -238,4 +280,13 @@ html{
     backdrop-filter: blur(1px);
     background-color: transparent;
     color: #fff;
+}
+
+.text-footer{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 15px;
 }
