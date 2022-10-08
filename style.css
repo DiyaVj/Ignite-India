@@ -260,6 +260,8 @@ html{
     margin: 2px 0 1px;
 }
 
+
+
 .btn:hover{
     cursor: pointer;
     background-color: white;
@@ -290,3 +292,44 @@ html{
     font-family: 'ubuntu', sans-serif;
     font-size: 15px;
 }
+
+.social{
+    
+    position: relative;
+    top: -15%;
+    left: 20%;
+    margin: 20px;
+    
+}
+    
+.social:hover 
+    {
+        animation: mymoves 2s infinite;
+      }
+
+@keyframes mymoves {
+    
+    50% {transform: rotate(2deg);}
+    100% {transform: scale(1);}
+
+}
+.sociallink{
+    position: relative;
+    top: -37%;
+    left: 30%;
+    margin: 20px;
+}
+.sociallink:hover 
+    {
+        animation: mymoves 2s infinite;
+      }
+
+@keyframes mymoves {
+    
+    50% {transform: rotate(2deg);}
+    100% {transform: scale(1);}
+
+}
+
+a { color: inherit; 
+text-decoration: none;} 
