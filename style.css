@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+    
+
 html{
     scroll-behavior: smooth;
+
 }
 
 /* Navbar*/
@@ -17,6 +20,7 @@ html{
     position: sticky;
     top: 0;
 }
+
 .navbar ul{
     display: flex;
     list-style: none;
@@ -33,6 +37,11 @@ html{
     padding: 1px 25px;
     transition: all .3s ease;
 }
+@media screen and (max-width: 1200px){
+    .navbar .menu li a{
+        max-width: 100%;
+    }
+}
 .navbar ul li a:hover{
     background-color: transparent;
     color: #a70c92;
@@ -45,12 +54,60 @@ html{
         justify-content: center;
     }
 }
-@media (max-width: 480px){
-    .navbar ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0px;
+    padding: 0px 25px;
+    transition: all .3s ease;
 }
+
+.social:hover 
+    {
+        animation: mymoves 2s infinite;
+        
+      }
+
+@keyframes mymoves {
+    
+    50% {transform: rotate(3deg);}
+    100% {transform: scale(1);}
+
+}
+
+.sociallink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0px;
+    padding: 0px 25px;
+    transition: all .3s ease;
+}
+.sociallink:hover 
+    {
+        animation: mymoves 2s infinite;
+      }
+
+@keyframes mymoves {
+    
+    50% {transform: rotate(3deg);}
+    100% {transform: scale(1);}
+
+}
+
+a { color: inherit; 
+text-decoration: none;} 
+
+
+
+
+
+    
+
+
 
 /* Home Section*/
 #home{
@@ -64,29 +121,40 @@ html{
     animation: change 10s ease-in-out infinite;
 }
 
+
 .image{
     margin-left: 50px;
     width: 90%;
-}
+    }
+ 
 
 .title{
-    font-size: 60px;
+    font-size: 90px;
     font-family:  'Segoe UI', system-ui,  'Segoe UI', Roboto,Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 75px;
 }
+
+
+
+    
+
 .main{
     display: flex;
     flex-direction: column;
     /* border: 1px solid white; */
     align-items: center;
     position: absolute;
-    top: 55%;
+    top: 60%;
     right:40%;
     margin: 0px 79px;
     font-family: century;
     font-size: 1.2rem;
     text-align: justify;
 }
+
+
+    
+
 
 .btn1{
     padding: 10px 20px;
@@ -105,6 +173,12 @@ html{
     margin-right: 420px;
 }
 
+@media screen and (max-width: 1200px){
+    .btn1{
+        margin-right: 0px;
+        height: auto;
+    }
+}
 .btn1:hover{
     cursor: pointer;
     background-color: white;
@@ -127,11 +201,17 @@ html{
     }
 }
 
+
+    
+
 /* about Section*/
 #about{
     display: flex;
     flex-direction: column;
 }
+
+    
+
 
 .container1{
     width: 100%;
@@ -146,6 +226,10 @@ html{
     justify-content: center;
 }
 
+
+
+
+
 .headings{
     margin-bottom: 430px;
     font-family: century;
@@ -155,6 +239,8 @@ html{
     font-weight: normal;
     align-items: center;
 }
+
+
 
 .main2{
     display: flex;
@@ -168,6 +254,9 @@ html{
     text-align: justify;   
     margin-bottom: 150PX;
 }
+
+    
+
 
 /* benefits Section*/
 #benefits{
@@ -187,6 +276,8 @@ html{
     align-items: center;
     justify-content: center;
 }
+
+    
 
 
 /* contact Section*/
@@ -211,6 +302,8 @@ html{
     justify-content: left;
 }
 
+
+
 .contact-box{
     width: 100%;
     max-width: 440px;
@@ -222,6 +315,9 @@ html{
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1px);
 }
+
+    
+
 
 .text-center{
     text-align: center;
@@ -292,44 +388,3 @@ html{
     font-family: 'ubuntu', sans-serif;
     font-size: 15px;
 }
-
-.social{
-    
-    position: relative;
-    top: -15%;
-    left: 20%;
-    margin: 20px;
-    
-}
-    
-.social:hover 
-    {
-        animation: mymoves 2s infinite;
-      }
-
-@keyframes mymoves {
-    
-    50% {transform: rotate(2deg);}
-    100% {transform: scale(1);}
-
-}
-.sociallink{
-    position: relative;
-    top: -37%;
-    left: 30%;
-    margin: 20px;
-}
-.sociallink:hover 
-    {
-        animation: mymoves 2s infinite;
-      }
-
-@keyframes mymoves {
-    
-    50% {transform: rotate(2deg);}
-    100% {transform: scale(1);}
-
-}
-
-a { color: inherit; 
-text-decoration: none;} 
