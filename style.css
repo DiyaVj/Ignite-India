@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+    
+
 html{
     scroll-behavior: smooth;
+
 }
 
 /* Navbar*/
@@ -17,6 +20,7 @@ html{
     position: sticky;
     top: 0;
 }
+
 .navbar ul{
     display: flex;
     list-style: none;
@@ -32,6 +36,11 @@ html{
     color: rgb(232, 232, 232);
     padding: 1px 25px;
     transition: all .3s ease;
+}
+@media screen and (max-width: 1200px){
+    .navbar .menu li a{
+        max-width: 100%;
+    }
 }
 .navbar ul li a:hover{
     background-color: transparent;
@@ -62,12 +71,60 @@ html{
         justify-content: center;
     }
 }
-@media (max-width: 480px){
-    .navbar ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0px;
+    padding: 0px 25px;
+    transition: all .3s ease;
 }
+
+.social:hover 
+    {
+        animation: mymoves 2s infinite;
+        
+      }
+
+@keyframes mymoves {
+    
+    50% {transform: rotate(3deg);}
+    100% {transform: scale(1);}
+
+}
+
+.sociallink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0px;
+    padding: 0px 25px;
+    transition: all .3s ease;
+}
+.sociallink:hover 
+    {
+        animation: mymoves 2s infinite;
+      }
+
+@keyframes mymoves {
+    
+    50% {transform: rotate(3deg);}
+    100% {transform: scale(1);}
+
+}
+
+a { color: inherit; 
+text-decoration: none;} 
+
+
+
+
+
+    
+
+
 
 /* Home Section*/
 #home{
@@ -81,29 +138,40 @@ html{
     animation: change 10s ease-in-out infinite;
 }
 
+
 .image{
     margin-left: 50px;
     width: 90%;
-}
+    }
+ 
 
 .title{
-    font-size: 60px;
+    font-size: 90px;
     font-family:  'Segoe UI', system-ui,  'Segoe UI', Roboto,Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 75px;
 }
+
+
+
+    
+
 .main{
     display: flex;
     flex-direction: column;
     /* border: 1px solid white; */
     align-items: center;
     position: absolute;
-    top: 55%;
+    top: 60%;
     right:40%;
     margin: 0px 79px;
     font-family: century;
     font-size: 1.2rem;
     text-align: justify;
 }
+
+
+    
+
 
 .btn1{
     padding: 10px 20px;
@@ -122,6 +190,12 @@ html{
     margin-right: 420px;
 }
 
+@media screen and (max-width: 1200px){
+    .btn1{
+        margin-right: 0px;
+        height: auto;
+    }
+}
 .btn1:hover{
     cursor: pointer;
     background-color: white;
@@ -144,18 +218,26 @@ html{
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 767px){
     
 }
 @media (max-width: 480px){
 
 }
+=======
+
+    
+>>>>>>> 3197b4ef842479f66f212ccc2857dca00d063f1a
 
 /* about Section*/
 #about{
     display: flex;
     flex-direction: column;
 }
+
+    
+
 
 .container1{
     width: 100%;
@@ -170,6 +252,10 @@ html{
     justify-content: center;
 }
 
+
+
+
+
 .headings{
     align-self: flex-start;
     font-family: century;
@@ -179,6 +265,8 @@ html{
     font-weight: normal;
     align-items: center;
 }
+
+
 
 .main2{
     display: flex;
@@ -193,11 +281,17 @@ html{
     margin-bottom: 150PX;
 }
 
+<<<<<<< HEAD
 .image2{
     display: block;
     justify-content: right;
     margin-top: 150px;
 }
+=======
+    
+
+
+>>>>>>> 3197b4ef842479f66f212ccc2857dca00d063f1a
 /* benefits Section*/
 #benefits{
     display: flex;
@@ -217,6 +311,7 @@ html{
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .card{
     width: 30%;
     height: 60%;
@@ -237,6 +332,10 @@ html{
     border-radius: 30%;
     margin-top: 20px;
 }
+=======
+    
+
+>>>>>>> 3197b4ef842479f66f212ccc2857dca00d063f1a
 
 .card p{
     font-size: 18px;
@@ -278,6 +377,8 @@ html{
     justify-content: center;
 }
 
+
+
 .contact-box{
     width: 100%;
     max-width: 440px;
@@ -289,6 +390,9 @@ html{
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1px);
 }
+
+    
+
 
 .text-center{
     text-align: center;
@@ -326,6 +430,8 @@ html{
     border-radius: 8px;
     margin: 2px 0 1px;
 }
+
+
 
 .btn:hover{
     cursor: pointer;
