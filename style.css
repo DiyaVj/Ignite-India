@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-    
-
 html{
     scroll-behavior: smooth;
 
@@ -37,15 +35,22 @@ html{
     padding: 1px 25px;
     transition: all .3s ease;
 }
-@media screen and (max-width: 1200px){
-    .navbar .menu li a{
-        max-width: 100%;
-    }
-}
 .navbar ul li a:hover{
     background-color: transparent;
     color: #a70c92;
     font-weight: bold;
+}
+
+.icon{
+    align-items: left;
+    flex: auto;
+    margin-left: 10px;
+}
+
+.icon img{
+    display: inline-block;
+    justify-items: left;
+    height: 50px;
 }
 
 @media (max-width: 767px){
@@ -60,13 +65,18 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 18px 0px;
-    padding: 0px 25px;
+    margin: 3px 1px;
+    padding: 0px 35px;
     transition: all .3s ease;
+    height: 10px;
+    width: 10px;
+    color: #fff;
 }
 
 .social:hover 
     {
+        background-color: transparent;
+        color: #a70c92;
         animation: mymoves 2s infinite;
         
       }
@@ -74,7 +84,7 @@ html{
 @keyframes mymoves {
     
     50% {transform: rotate(3deg);}
-    100% {transform: scale(1);}
+    100% {transform: scale(1.5);}
 
 }
 
@@ -84,11 +94,11 @@ html{
     align-items: center;
     margin: 18px 0px;
     padding: 0px 25px;
-    transition: all .3s ease;
+    transition: all .1s ease;
 }
 .sociallink:hover 
     {
-        animation: mymoves 2s infinite;
+        animation: mymoves 1s infinite;
       }
 
 @keyframes mymoves {
@@ -100,13 +110,6 @@ html{
 
 a { color: inherit; 
 text-decoration: none;} 
-
-
-
-
-
-    
-
 
 
 /* Home Section*/
@@ -127,16 +130,12 @@ text-decoration: none;}
     width: 90%;
     }
  
-
-.title{
-    font-size: 90px;
-    font-family:  'Segoe UI', system-ui,  'Segoe UI', Roboto,Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#home h1{
+    font-size: 75px;
+    font-family:  'Segoe UI',Ubuntu, Cantarell, sans-serif;
     margin-left: 75px;
 }
 
-
-
-    
 
 .main{
     display: flex;
@@ -152,8 +151,6 @@ text-decoration: none;}
     text-align: justify;
 }
 
-
-    
 
 
 .btn1{
@@ -202,7 +199,13 @@ text-decoration: none;}
 }
 
 
+@media (max-width: 767px){
     
+}
+@media (max-width: 480px){
+
+}
+
 
 /* about Section*/
 #about{
@@ -226,12 +229,8 @@ text-decoration: none;}
     justify-content: center;
 }
 
-
-
-
-
 .headings{
-    margin-bottom: 430px;
+    align-self: flex-start;
     font-family: century;
     font-size: 3rem;
     text-align: center;
@@ -239,8 +238,6 @@ text-decoration: none;}
     font-weight: normal;
     align-items: center;
 }
-
-
 
 .main2{
     display: flex;
@@ -255,8 +252,11 @@ text-decoration: none;}
     margin-bottom: 150PX;
 }
 
-    
-
+.image2{
+    display: block;
+    justify-content: right;
+    margin-top: 150px;
+}
 
 /* benefits Section*/
 #benefits{
@@ -271,13 +271,46 @@ text-decoration: none;}
     background: linear-gradient(178.66deg, #02003A 1.03%, #010011 98.78%);
     background-size: cover;
     padding: 30px;
-    display: flex;
+    display: -ms-inline-grid;
     color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
 }
 
-    
+.rows{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 30%;
+    height: 60%;
+    max-width: 440px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    margin-top: 40px;
+}
+
+.card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+    margin-top: 20px;
+}
+
+.card p{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+}
 
 
 /* contact Section*/
@@ -299,7 +332,7 @@ text-decoration: none;}
     padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 
@@ -308,16 +341,13 @@ text-decoration: none;}
     width: 100%;
     max-width: 440px;
     color: #fff;
-    text-align: left;
+    text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(27, 27, 27, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1px);
 }
-
-    
-
 
 .text-center{
     text-align: center;
