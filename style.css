@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-    
-
 html{
     scroll-behavior: smooth;
 
@@ -37,34 +35,24 @@ html{
     padding: 1px 25px;
     transition: all .3s ease;
 }
-@media screen and (max-width: 1200px){
-    .navbar .menu li a{
-        max-width: 100%;
-    }
-}
 .navbar ul li a:hover{
     background-color: transparent;
     color: #a70c92;
     font-weight: bold;
 }
 
-.social{
+.icon{
     align-items: left;
     flex: auto;
     margin-left: 10px;
 }
 
-.social img{
+.icon img{
     display: inline-block;
     justify-items: left;
     height: 50px;
 }
 
-.social2 img{
-    display: inline-block;
-    justify-items: left;
-    height: 50px;
-}
 @media (max-width: 767px){
     .navbar ul{
         flex-wrap: wrap;
@@ -77,13 +65,18 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 18px 0px;
-    padding: 0px 25px;
+    margin: 3px 1px;
+    padding: 0px 35px;
     transition: all .3s ease;
+    height: 10px;
+    width: 10px;
+    color: #fff;
 }
 
 .social:hover 
     {
+        background-color: transparent;
+        color: #a70c92;
         animation: mymoves 2s infinite;
         
       }
@@ -91,7 +84,7 @@ html{
 @keyframes mymoves {
     
     50% {transform: rotate(3deg);}
-    100% {transform: scale(1);}
+    100% {transform: scale(1.5);}
 
 }
 
@@ -101,11 +94,11 @@ html{
     align-items: center;
     margin: 18px 0px;
     padding: 0px 25px;
-    transition: all .3s ease;
+    transition: all .1s ease;
 }
 .sociallink:hover 
     {
-        animation: mymoves 2s infinite;
+        animation: mymoves 1s infinite;
       }
 
 @keyframes mymoves {
@@ -117,13 +110,6 @@ html{
 
 a { color: inherit; 
 text-decoration: none;} 
-
-
-
-
-
-    
-
 
 
 /* Home Section*/
@@ -144,16 +130,12 @@ text-decoration: none;}
     width: 90%;
     }
  
-
-.title{
-    font-size: 90px;
-    font-family:  'Segoe UI', system-ui,  'Segoe UI', Roboto,Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#home h1{
+    font-size: 75px;
+    font-family:  'Segoe UI',Ubuntu, Cantarell, sans-serif;
     margin-left: 75px;
 }
 
-
-
-    
 
 .main{
     display: flex;
@@ -169,8 +151,6 @@ text-decoration: none;}
     text-align: justify;
 }
 
-
-    
 
 
 .btn1{
@@ -218,17 +198,14 @@ text-decoration: none;}
     }
 }
 
-<<<<<<< HEAD
+
 @media (max-width: 767px){
     
 }
 @media (max-width: 480px){
 
 }
-=======
 
-    
->>>>>>> 3197b4ef842479f66f212ccc2857dca00d063f1a
 
 /* about Section*/
 #about{
@@ -252,10 +229,6 @@ text-decoration: none;}
     justify-content: center;
 }
 
-
-
-
-
 .headings{
     align-self: flex-start;
     font-family: century;
@@ -265,8 +238,6 @@ text-decoration: none;}
     font-weight: normal;
     align-items: center;
 }
-
-
 
 .main2{
     display: flex;
@@ -281,17 +252,12 @@ text-decoration: none;}
     margin-bottom: 150PX;
 }
 
-<<<<<<< HEAD
 .image2{
     display: block;
     justify-content: right;
     margin-top: 150px;
 }
-=======
-    
 
-
->>>>>>> 3197b4ef842479f66f212ccc2857dca00d063f1a
 /* benefits Section*/
 #benefits{
     display: flex;
@@ -311,7 +277,13 @@ text-decoration: none;}
     justify-content: center;
 }
 
-<<<<<<< HEAD
+.rows{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
 .card{
     width: 30%;
     height: 60%;
@@ -324,6 +296,7 @@ text-decoration: none;}
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0,0,0,0.1);
     backdrop-filter: blur(5px);
+    margin-top: 40px;
 }
 
 .card img{
@@ -332,10 +305,6 @@ text-decoration: none;}
     border-radius: 30%;
     margin-top: 20px;
 }
-=======
-    
-
->>>>>>> 3197b4ef842479f66f212ccc2857dca00d063f1a
 
 .card p{
     font-size: 18px;
@@ -343,18 +312,7 @@ text-decoration: none;}
     max-width: 330px;
 }
 
-.card .links img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 10px 5px;
-    transition: background 0.5s;
-}
 
-.card .links img:hover{
-    background: #ffffff;
-       box-shadow: 0 0 10px rgb(169, 205, 235);
-}
 /* contact Section*/
 
 #contact{
@@ -390,9 +348,6 @@ text-decoration: none;}
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1px);
 }
-
-    
-
 
 .text-center{
     text-align: center;
