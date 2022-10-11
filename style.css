@@ -39,6 +39,23 @@ html{
     font-weight: bold;
 }
 
+.social{
+    align-items: left;
+    flex: auto;
+    margin-left: 10px;
+}
+
+.social img{
+    display: inline-block;
+    justify-items: left;
+    height: 50px;
+}
+
+.social2 img{
+    display: inline-block;
+    justify-items: left;
+    height: 50px;
+}
 @media (max-width: 767px){
     .navbar ul{
         flex-wrap: wrap;
@@ -127,6 +144,13 @@ html{
     }
 }
 
+@media (max-width: 767px){
+    
+}
+@media (max-width: 480px){
+
+}
+
 /* about Section*/
 #about{
     display: flex;
@@ -147,7 +171,7 @@ html{
 }
 
 .headings{
-    margin-bottom: 430px;
+    align-self: flex-start;
     font-family: century;
     font-size: 3rem;
     text-align: center;
@@ -169,6 +193,11 @@ html{
     margin-bottom: 150PX;
 }
 
+.image2{
+    display: block;
+    justify-content: right;
+    margin-top: 150px;
+}
 /* benefits Section*/
 #benefits{
     display: flex;
@@ -182,13 +211,51 @@ html{
     background: linear-gradient(178.66deg, #02003A 1.03%, #010011 98.78%);
     background-size: cover;
     padding: 30px;
-    display: flex;
+    display: -ms-inline-grid;
     color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
 }
 
+.card{
+    width: 30%;
+    height: 60%;
+    max-width: 440px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
 
+.card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+    margin-top: 20px;
+}
+
+.card p{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+
+.card .links img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+
+.card .links img:hover{
+    background: #ffffff;
+       box-shadow: 0 0 10px rgb(169, 205, 235);
+}
 /* contact Section*/
 
 #contact{
@@ -208,14 +275,14 @@ html{
     padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 .contact-box{
     width: 100%;
     max-width: 440px;
     color: #fff;
-    text-align: left;
+    text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(27, 27, 27, 0.2);
     border-radius: 16px;
