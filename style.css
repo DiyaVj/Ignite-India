@@ -76,35 +76,15 @@ html{
 .social:hover 
     {
         background-color: transparent;
-        color: #a70c92;
+
         animation: mymoves 2s infinite;
         
       }
 
 @keyframes mymoves {
     
-    50% {transform: rotate(3deg);}
-    100% {transform: scale(1.5);}
-
-}
-
-.sociallink{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 18px 0px;
-    padding: 0px 25px;
-    transition: all .1s ease;
-}
-.sociallink:hover 
-    {
-        animation: mymoves 1s infinite;
-      }
-
-@keyframes mymoves {
-    
-    50% {transform: rotate(3deg);}
-    100% {transform: scale(1);}
+    /*50% {transform: rotate(3deg);}*/
+    100% {transform: scale(1.2);}
 
 }
 
@@ -139,18 +119,16 @@ text-decoration: none;}
 
 .main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* border: 1px solid white; */
     align-items: center;
     position: absolute;
-    top: 60%;
-    right:40%;
+    top: 40%;
     margin: 0px 79px;
     font-family: century;
     font-size: 1.2rem;
     text-align: justify;
 }
-
 
 
 .btn1{
@@ -251,7 +229,7 @@ text-decoration: none;}
 
 
 .video{
-    border: solid white;
+    /* border: solid white;*/
     margin: inherit;
 }
 
