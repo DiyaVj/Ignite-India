@@ -42,7 +42,6 @@ html{
 .navbar ul li a:hover{
     background-color: transparent;
     color: #a70c92;
-    font-weight: bold;
 }
 
 .icon{
@@ -113,19 +112,7 @@ text-decoration: none;}
     margin-right: 30px;
     margin-left: 10px;
 }
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 4rem;
-}
-.hero img{
-    width: 50%;
-}
-.hero .heading{
-    font-size: 3rem;
-    font-weight: 500;
-}
+
 /*mobile*/
 @media only screen and (max-width:768px) {
 
@@ -183,16 +170,17 @@ text-decoration: none;}
     animation: change 10s ease-in-out infinite;
 }
 
-
-.image{
-    margin-left: 50px;
-    width: 90%;
-    }
- 
-#home h1{
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.hero img{
+    width: 50%;
+}
+.hero .heading{
     font-size: 3rem;
-    font-family:  Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin-left: 75px;
     font-weight: 500;
 }
 
@@ -261,15 +249,17 @@ text-decoration: none;}
 /*mobile*/
 @media only screen and (max-width:768px) {
 
-    #home .image{
-        margin-left: 20px;
-        width: 80%;
-        }
-    #home h1{
-            font-size: 30px;
-            font-family:  15px wf_segoe-ui_normal,'Segoe UI';
-            margin-left: 30px;
-        }
+    #home img{
+        width: 22rem;
+    }
+    
+    .hero{
+        margin-top: 7rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
     .main{
             margin: 0px 28px;
             font-family: century;
@@ -277,6 +267,11 @@ text-decoration: none;}
             text-align: center;
             flex-wrap: wrap;
         }
+
+    #home .main p{
+        margin-top: 20%;
+        font-size: 1rem;
+    }
     .btn1{
             border-radius: 6px ;
             font-size: 0.8rem;
@@ -354,11 +349,11 @@ text-decoration: none;}
     }
     .main2 p{
         margin-top: 90px;
-        padding: 0px 70px;
+        padding: 0px 40px;
     }
     .video{
-        width: 200;
-        height: 100;
+        width: 15rem;
+        height: 35vh;
     }
 }
 
@@ -429,11 +424,6 @@ text-decoration: none;}
         justify-content: center;
     }
 
-    .card{
-        
-        /* width: calc(50% - 20px); */
-
-    }
 }
 
 /* contact Section*/
