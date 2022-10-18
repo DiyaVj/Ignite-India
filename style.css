@@ -250,13 +250,9 @@ text-decoration: none;}
 @media only screen and (max-width:768px) {
 
     #home img{
-        width: 16rem;
+        width: 22rem;
     }
     
-    #home p{
-        font-size: 2rem;
-    }
-
     .hero{
         margin-top: 7rem;
         display: flex;
@@ -428,11 +424,6 @@ text-decoration: none;}
         justify-content: center;
     }
 
-    .card{
-        
-        /* width: calc(50% - 20px); */
-
-    }
 }
 
 /* contact Section*/
