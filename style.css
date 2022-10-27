@@ -57,8 +57,6 @@ html{
     margin: 5px;
 }
 
-
-
 .social{
     display: flex;
     justify-content: center;
@@ -74,7 +72,6 @@ html{
 .social:hover 
     {
         background-color: transparent;
-
         animation: mymoves 2s infinite;
         
       }
@@ -173,15 +170,17 @@ text-decoration: none;}
 .hero{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 4rem;
+    justify-content: space-evenly;
+    margin-top: 6rem;
 }
 .hero img{
-    width: 50%;
+    width: 37%;
+    margin-right: 2rem;
 }
 .hero .heading{
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 500;
+    margin-left: 5rem;
 }
 
 
@@ -200,10 +199,14 @@ text-decoration: none;}
     display: flex;
     width: 87vw;
     margin: auto;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
+    gap: 1.5rem;
+}
 
-    align-items: center;
-    gap: 2rem;
+.main p{
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-left: 1rem;
 }
 
 .btn1{
@@ -220,7 +223,7 @@ text-decoration: none;}
     align-items: left;
     text-align: center;
     margin-top: 30px;
-    margin-right: 420px;
+    margin-left: 1rem;
 }
 
 .btn1:hover{
@@ -245,12 +248,12 @@ text-decoration: none;}
     }
 }
 
-
 /*mobile*/
-@media only screen and (max-width:768px) {
+@media (min-width:300px) and (max-width:768px) {
 
     #home img{
-        width: 22rem;
+        display: flex;
+        width: 18rem;
     }
     
     .hero{
@@ -258,25 +261,29 @@ text-decoration: none;}
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
+        margin-right: 1rem;
+    }
+
+    .heading p{
+        font-size: 2rem;
+        margin-left: -2.2rem;
     }
 
     .main{
             margin: 0px 28px;
-            font-family: century;
             font-size:  1rem;
-            text-align: center;
+            text-align: left;
             flex-wrap: wrap;
         }
 
     #home .main p{
-        margin-top: 20%;
+        margin-top: 4%;
         font-size: 1rem;
     }
     .btn1{
             border-radius: 6px ;
-            font-size: 0.8rem;
-            margin-top: 40px;
-            margin-right: 20px;
+            font-size: 1rem;
+            margin-top: 28px;
         }
     .img{
         display: none;
