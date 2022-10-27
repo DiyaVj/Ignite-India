@@ -177,11 +177,12 @@ text-decoration: none;}
     width: 37%;
     margin-right: 2rem;
 }
-.hero .heading{
-    font-size: 3.2rem;
-    font-weight: 500;
-    margin-left: 5rem;
-}
+
+.hero p{
+        font-size: 3rem;
+        font-weight: 500;
+        margin-left: 5rem;
+    }
 
 
 
@@ -264,11 +265,11 @@ text-decoration: none;}
         margin-right: 1rem;
     }
 
-    .heading p{
-        font-size: 2rem;
-        margin-left: -2.2rem;
+    .hero p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-left: 3rem;
     }
-
     .main{
             margin: 0px 28px;
             font-size:  1rem;
