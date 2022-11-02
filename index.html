@@ -7,6 +7,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="image 1 (1).png">
         <link rel="stylesheet" type="text/css" href="./style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
     </head>
     
 <body>       
@@ -38,43 +39,49 @@
                     <span class="bar"></span>
                 </div>
         </nav>
+
         <section id="home">
+            <!-- <img  src="./assets/picture.png" alt=""> -->
             <div class="hero">
-                    <p>Microsoft Ignite 2022 After Party by MLSA India</p>
-                <img  src="./assets/picture.png" alt="">
+                <h2>Microsoft Ignite 2022 After Party by MLSA India</h2>
             </div>
-        
-         
+    
             <div class="main">
-                <div>
-                <p>A watch party that helps you to engage with the technical community of your choice and empower everyone around you.
-                <br> On 18 November 2022,Friday<br>
+        
+            <div>
+                <!-- <p>A watch party that helps you to engage with the technical community of your choice and empower everyone around you. -->
+                <p>18 November 2022<br>
                 5:30PM - 6:30PM IST <br> Format: Digital
                 </p>
-                <button class="btn1"> <a href="https://forms.office.com/r/qWZ91JUJPU">Register Now!</a></button>
+                 <button> <a href="https://forms.office.com/r/qWZ91JUJPU">Register Now!</a></button>
             </div>
-                <!-- <img class="img" src="./assets/icon.png" width="200" >  -->
-
-            </div>
-
             
+        </div>
+        <!-- <img class="img" src="./assets/icon.png" width="80" >  -->
+
         </section>
  
         <section id="about">
             <div class="container1">
-                <h1 class="headings">About</h1>
-                <div class="main2">
+                <h1 class="headings">What is Microsoft Ignite After Party?</h1>
+                
                 <p>Microsoft Ignite After Party is where our local community members come together to watch a pre-selected event, discuss about it, bringing content closer to the community and going deep-dive into a particular topic. Be a part of the After Party and experience authenticity, diversity and inclusivity that we bring as a part of Microsoft Learn Student Ambassador. </p>
 
-                <video class="video" width="400" height="300" controls="autoplay">
+                <video class="video" controls="autoplay">
                     <source src="assets/videoignite.mp4" type="video/mp4">
                 </video>
-        </div>
         </div>
         </section>
 
         <section id="Spotlight">
             <div class="container2">
+                        <!-- Background animtion-->
+                               <div class="cube"></div>
+                               <div class="cube"></div>
+                               <div class="cube"></div>
+                               <div class="cube"></div>
+                              <div class="cube"></div>
+                
                 <h1 class="headings">Spotlight</h1>
                 <div class="rows">
 
@@ -117,11 +124,22 @@
         </section>
 
         <section id="footer">
-            <div class="text-footer">Made with 💜 by team MLSA India</div>
+            <div class="text-footer"><p>Made with 💜 by team MLSA India</p></div>
         </section>
 
         <script src="app.js"></script>
         <script src="vanilla-tilt.js"></script>
+        <script>
+            ScrollReveal({ 
+                reset:true,
+                distance:'60px',
+                duration:2000,
+                delay:500
+             });
+             ScrollReveal().reveal('.main, .headings, .container3 h1', { delay:420 });
+             ScrollReveal().reveal('.hero img, .container1 p', { delay:320, origin:'left' });
+             ScrollReveal().reveal('.hero, .video, .card, .card img, .card p', { delay:320, origin:'top' });
+        </script>
     
 </body>
 </html>
