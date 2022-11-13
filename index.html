@@ -8,6 +8,9 @@
         <link rel="stylesheet" type="text/css" href="./style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="carousel.scss"></script>
     </head>
     
 <body>       
@@ -19,6 +22,7 @@
                 <li> <a href="#home">Home</a> </li>
                 <li> <a href="#about">About</a> </li>
                 <li> <a href="#Spotlight">Spotlight</a> </li>
+                <li> <a href="#team">Team</a> </li>
                 <!-- <li> <a href="#contact">Contact</a> </button></li> -->
             </ul>
                 <div class="social">
@@ -45,7 +49,6 @@
             <div class="hero">
                 <h2>Microsoft Ignite 2022 After Party by MLSA India</h2>
             </div>
-    
             <div class="main">
         
             <div>
@@ -57,12 +60,13 @@
             </div>
             
         </div>
-        <!-- <img class="img" src="./assets/icon.png" width="80" >  -->
+        <!-- <img class="img" src="./assets/icon.png" width="100" >  -->
 
         </section>
  
         <section id="about">
             <div class="container1">
+
                 <h1 class="headings">What is Microsoft Ignite After Party?</h1>
                 
                 <p>Microsoft Ignite After Party is where our local community members come together to watch a pre-selected event, discuss about it, bringing content closer to the community and going deep-dive into a particular topic. Be a part of the After Party and experience authenticity, diversity and inclusivity that we bring as a part of Microsoft Learn Student Ambassador. </p>
@@ -74,6 +78,7 @@
         </section>
 
         <section id="Spotlight">
+            
             <div class="container2">
                         <!-- Background animtion-->
                                <div class="cube"></div>
@@ -104,24 +109,54 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="team">
             <div class="container3">
-                <h1> Coming soon...</h1>
-                <!-- <div class="contact-box">
-                <h2 class="text-center">Contact Us</h2>
-                <form action="connect.php" method="post">
-                <div class="form">
+<h1 class="headings">Meet Our Amazing Team</h1>
+<div class="profiles">
+    <!-- Diya -->
+    <div class="profile">
+        <img src="/assets/dv.png" height="200px" width="200px" alt="" class="profile-img" href="">
+
+        <h3 class="user-name">Diya Vijay</h3>
+        <h5>Beta MLSA</h5>
+    </div>
+    <!-- Megha -->
+    <div class="profile">
+        <img src="/assets/dv.png" height="200px" width="200px" alt="" class="profile-img" href="">
+
+        <h3 class="user-name">Megha Pandey</h3>
+        <h5>Gold MLSA</h5>
+    </div>
+    <!-- Keerathana -->
+    <div class="profile">
+        <img src="/assets/dv.png" height="200px" width="200px" alt="" class="profile-img" href="">
+
+        <h3 class="user-name">Keerathana Sethi</h3>
+        <h5>Beta MLSA</h5>
+    </div>
+</div>
+                        <!-- carousel -->
+                        <h2 class="text-center">Our Partners</h2>
+                        <div class="slider">
+                            <div class="slide-track">
+                                <div class="slide">
+                                    <img src="assets/CodeIN 2.png" height="100"  alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/techieGen.png" height="100" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/Programming community.jpeg" height="100" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/Tech4everyone.jpeg" height="100" alt="" />
+                                </div>
+                            </div>
+                        </div>
                 
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-                    <button class="btn btn-dark">Send</button>
-                    
-            </div>
-                </form>
-         </div> -->
-            </div>
+            </div>             
         </section>
+                    
 
         <section id="footer">
             <div class="text-footer"><p>Made with 💜 by team MLSA India</p></div>
@@ -129,6 +164,7 @@
 
         <script src="app.js"></script>
         <script src="vanilla-tilt.js"></script>
+        <script src="carousel.js"></script>
         <script>
             ScrollReveal({ 
                 reset:true,
@@ -136,10 +172,9 @@
                 duration:2000,
                 delay:500
              });
-             ScrollReveal().reveal('.main, .headings, .container3 h1', { delay:420 });
-             ScrollReveal().reveal('.hero img, .container1 p', { delay:320, origin:'left' });
-             ScrollReveal().reveal('.hero, .video, .card, .card img, .card p', { delay:320, origin:'top' });
+             ScrollReveal().reveal('.main, .headings, .container3 h1, .slider .slide', { delay:420 });
+             ScrollReveal().reveal('.hero img, .container1 p, .text-center', { delay:320, origin:'left' });
+             ScrollReveal().reveal('.hero, .video, .card, .card img, .card p, .profile, .profile h5', { delay:320, origin:'top' });
         </script>
-    
 </body>
 </html>
